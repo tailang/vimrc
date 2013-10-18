@@ -28,6 +28,7 @@ set nocompatible               " be iMproved
  Bundle 'flazz/vim-colorschemes'
  Bundle 'scrooloose/nerdcommenter'
  Bundle 'tmhedberg/matchit'
+ Bundle 'vim-scripts/fcitx.vim'
  " vim-scripts repos
  Bundle 'L9'
  Bundle 'FuzzyFinder'
@@ -84,7 +85,7 @@ set nocompatible               " be iMproved
  let g:auto_save = 1  " enable AutoSave on Vim startup
  
  "主题颜色配置
- :colorscheme codeschool  
+ :colorscheme fu 
  
  "显示隐藏文件 
 let NERDTreeShowHidden = 1
