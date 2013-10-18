@@ -84,4 +84,7 @@ set nocompatible               " be iMproved
  let g:auto_save = 1  " enable AutoSave on Vim startup
  
  "主题颜色配置
- :colorscheme fu
+ :colorscheme codeschool  
+ 
+ "显示隐藏文件 
+let NERDTreeShowHidden = 1
