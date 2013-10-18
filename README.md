@@ -5,14 +5,13 @@ This is a simple vim configuration file.
 ######Useage
 ```bash
 $mkdir ~/.vim
-$cd ~/.vim
 $git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 Then clone the configuration
 ```bash
 $git clone git@github.com:tailang/vimrc.git
 $cd vimrc
-cp .vimrc ~/
+$cp .vimrc ~/
 ```
 Last open the new vim input the commond line 
 ```
