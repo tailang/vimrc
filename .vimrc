@@ -97,6 +97,10 @@ if (has("gui_running"))
 endif
 
 set cursorline  "设置光标行
-setlocal noswapfile "不要生成swap文件
+set noswapfile "不要生成swap文件
+set nobackup
 set bufhidden=hide "当buffer被丢弃的时候隐藏它
 set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
+set expandtab                 "Use space instead of tabs
+nnoremap <silent> <C-t> :ClearAllCtrlPCache<CR>\|:CtrlP<CR> "Bind C-t for Clear all cache and open CtrlP
+
