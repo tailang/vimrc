@@ -49,7 +49,7 @@ set nocompatible               " be iMproved
  " NOTE: comments after Bundle command are not allowed..
 
  " NERDTree 插件配置
- map <F2> :NERDTreeToggle<CR> 
+ map <F3> :NERDTreeToggle<CR> 
  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&  b:NERDTreeType == "primary") | q | endif "自动关闭
 
  "neocomplache 配置
@@ -85,14 +85,18 @@ set nocompatible               " be iMproved
  let g:auto_save = 1  " enable AutoSave on Vim startup
  
  "主题颜色配置
- :colorscheme Monokai 
+  :colorscheme Monokai
  
  "NERDTREE显示隐藏文件 
 let NERDTreeShowHidden = 1
 
-set lines=28    "设置行数，也就是上下的长度
-set columns=125    "设置列数，也就是左右的宽度
-winpos 120 50    "设置窗口的位置
+if (has("gui_running"))	
+	set lines=28    "设置行数，也就是上下的长度
+	set columns=125    "设置列数，也就是左右的宽度
+	winpos 120 50    "设置窗口的位置
+endif
+
 set cursorline  "设置光标行
 setlocal noswapfile "不要生成swap文件
 set bufhidden=hide "当buffer被丢弃的时候隐藏它
+set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
