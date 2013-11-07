@@ -88,19 +88,29 @@ set nocompatible               " be iMproved
   :colorscheme Monokai
  
  "NERDTREE显示隐藏文件 
-let NERDTreeShowHidden = 1
+ let NERDTreeShowHidden = 1
 
-if (has("gui_running"))	
-	set lines=28    "设置行数，也就是上下的长度
-	set columns=125    "设置列数，也就是左右的宽度
-	winpos 120 50    "设置窗口的位置
-endif
+ if (has("gui_running"))	
+	 set lines=28    "设置行数，也就是上下的长度
+	 set columns=125    "设置列数，也就是左右的宽度
+	 winpos 120 50    "设置窗口的位置
+ endif
 
-set cursorline  "设置光标行
-set noswapfile "不要生成swap文件
-set nobackup
-set bufhidden=hide "当buffer被丢弃的时候隐藏它
-set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
-set expandtab                 "Use space instead of tabs
-nnoremap <silent> <C-t> :ClearAllCtrlPCache<CR>\|:CtrlP<CR> "Bind C-t for Clear all cache and open CtrlP
+ set cursorline  "设置光标行
+ set noswapfile "不要生成swap文件
+ set nobackup
+ set bufhidden=hide "当buffer被丢弃的时候隐藏它
+ set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
+ set expandtab                 "Use space instead of tabs
+ nnoremap <silent> <C-t> :ClearAllCtrlPCache<CR>\|:CtrlP<CR> "Bind C-t for Clear all cache and open CtrlP
 
+ "gvim Toggle Menu and Toolbar
+ set guioptions-=m
+ set guioptions-=T
+ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
