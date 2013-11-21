@@ -102,6 +102,7 @@ set nocompatible               " be iMproved
  set bufhidden=hide "当buffer被丢弃的时候隐藏它
  set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
  set expandtab                 "Use space instead of tabs
+
  nnoremap <silent> <C-t> :ClearAllCtrlPCache<CR>\|:CtrlP<CR> "Bind C-t for Clear all cache and open CtrlP
 
  "gvim Toggle Menu and Toolbar
