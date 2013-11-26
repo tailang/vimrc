@@ -105,7 +105,7 @@ set nocompatible               " be iMproved
  let mapleader = ","  "设置外部复制粘帖
  let g:mapleader = ","  
  map Y "+y
- map P "+p  ""
+ map P "+p
 
  set tabstop=2 "设置tab键长度
  set sw=2
