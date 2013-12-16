@@ -18,7 +18,7 @@ set nocompatible               " be iMproved
  Bundle 'kien/ctrlp.vim'
  Bundle 'msanders/snipmate.vim'
  Bundle 'mileszs/ack.vim'
- Bundle 'Shougo/neocomplcache.vim'
+ "Bundle 'Shougo/neocomplcache.vim' 
  Bundle 'Townk/vim-autoclose'
  Bundle 'Lokaltog/vim-powerline'
  Bundle 'vim-scripts/vim-auto-save'
@@ -26,6 +26,7 @@ set nocompatible               " be iMproved
  Bundle 'scrooloose/nerdcommenter'
  Bundle 'tmhedberg/matchit'
  Bundle 'vim-scripts/fcitx.vim'
+ Bundle 'slim-template/vim-slim'
  " vim-scripts repos
  Bundle 'L9'
  Bundle 'FuzzyFinder'
@@ -61,8 +62,8 @@ set nocompatible               " be iMproved
  "neocomplache 配置
  "
  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
- let g:neocomplcache_enable_at_startup = 1 "自动启动
- let g:neocomplcache_force_overwrite_completefunc = 1 "强制启动，避免无法运行
+ "let g:neocomplcache_enable_at_startup = 1 "自动启动
+ "let g:neocomplcache_force_overwrite_completefunc = 1 "强制启动，避免无法运行
 
 
  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -101,7 +102,7 @@ set nocompatible               " be iMproved
  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
  set rnu "显示相对行号
  set mouse=a "设置鼠标操作
-
+ 
  let mapleader = ","  "设置外部复制粘帖
  let g:mapleader = ","  
  map Y "+y
@@ -117,7 +118,7 @@ set nocompatible               " be iMproved
  set foldmethod=syntax "代码折叠
  set foldlevelstart=99 "默认不折叠
 
- :colorscheme Monokai "设置色彩主题
+ :colorscheme codeschool "设置色彩主题
 
  if (has("gui_running")) "如果是gvim
   set lines=28    "设置行数，也就是上下的长度
