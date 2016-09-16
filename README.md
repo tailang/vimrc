@@ -15,6 +15,6 @@ $cp .vimrc ~/
 ```
 Last open the new vim input the commond line 
 ```
-:BundleInstall
+:PluginInstall
 ````
 
