@@ -13,10 +13,25 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " 来自github
-Plugin 'flazz/vim-colorschemes'
+
+"主题
+Plugin 'flazz/vim-colorschemes' 
+
+"底部状态栏
 Plugin 'Lokaltog/vim-powerline'
+
+"文件目录
 Plugin 'scrooloose/nerdtree'
+
+"快速查找
 Plugin 'kien/ctrlp.vim'
+
+"快速注释
+Plugin 'scrooloose/nerdcommenter'
+
+"自动补全
+Plugin 'Shougo/neocomplcache.vim'
+
 " 来自vim
 
 " non github repos
@@ -68,14 +83,18 @@ set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
 set expandtab                 "Use space instead of tabs
 
 let mapleader = ","  "设置外部复制粘帖
-let g:mapleader = ","  
+let g:mapleader = ","
 map Y "+y
 map P "+p
 
-noremap oo o<esc> "插入新行
+"noremap ok o<esc> "插入新行
 
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm.app"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 endif
+
+"neocomplcache.vim
+let g:neocomplcache_enable_at_startup = 1 "打开vim时自动打开
+let g:neocomplcache_force_overwrite_completefunc = 1
