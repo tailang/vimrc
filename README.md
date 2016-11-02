@@ -4,6 +4,7 @@ This is a simple vim configuration file.
 
 ######Useage
 ```bash
+$rm -rf ~/.vim
 $mkdir ~/.vim
 $git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
