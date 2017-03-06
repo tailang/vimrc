@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " 来自github
 
 "主题
-Plugin 'flazz/vim-colorschemes' 
+Plugin 'flazz/vim-colorschemes'
 
 "底部状态栏
 Plugin 'Lokaltog/vim-powerline'
@@ -31,6 +31,12 @@ Plugin 'scrooloose/nerdcommenter'
 
 "自动补全
 Plugin 'Shougo/neocomplcache.vim'
+
+"括号补全
+Plugin 'jiangmiao/auto-pairs'
+
+"语法分析
+"Plugin 'vim-syntastic/syntastic'
 
 " 来自vim
 
@@ -56,9 +62,9 @@ filetype plugin indent on    " required
 colorscheme  codeschool
 
 "NERDTree 插件配置
-map <F3> :NERDTreeToggle<CR>
+map tt :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let NERDTreeShowHidden = 1 "NERDTREE显示隐藏文件 
+let NERDTreeShowHidden = 1 "NERDTREE显示隐藏文件
 " ==============================================================================
 " vim原生设置
 " set rnu "显示相对行号
@@ -69,32 +75,30 @@ set tabstop=2 "设置tab键长度
 set sw=2
 set ts=2
 
-set list "设置空格显示为+号
-set listchars=trail:+
+"set list "设置空格显示为+号
+"set listchars=trail:+
 
 set foldmethod=syntax "代码折叠
 set foldlevelstart=99 "默认不折叠
 
 set cursorline  "设置光标行
+set cursorcolumn "设置光标列
 set noswapfile "不要生成swap文件
 set nobackup
 set bufhidden=hide "当buffer被丢弃的时候隐藏它
-set guicursor=n-v-c:hor10 "normal下贯标显示为下划线
 set expandtab                 "Use space instead of tabs
 
 let mapleader = ","  "设置外部复制粘帖
 let g:mapleader = ","
 map Y "+y
 map P "+p
+ 
+"noremap ok o <esc> "插入新行
 
-"noremap ok o<esc> "插入新行
-
-" Change cursor shape between insert and normal mode in iTerm2.app
-if $TERM_PROGRAM =~ "iTerm.app"
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-endif
-
+noremap qq ^ 
+noremap ee $
+noremap ww gg
+noremap ss G
 "neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1 "打开vim时自动打开
 let g:neocomplcache_force_overwrite_completefunc = 1
