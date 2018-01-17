@@ -29,6 +29,7 @@ Plugin 'kien/ctrlp.vim'
 "快速注释
 Plugin 'scrooloose/nerdcommenter'
 
+
 "自动补全
 Plugin 'Shougo/neocomplcache.vim'
 
@@ -94,11 +95,14 @@ map Y "+y
 map P "+p
  
 "noremap ok o <esc> "插入新行
-
-noremap qq ^ 
-noremap ee $
-noremap ww gg
-noremap ss G
+"option+h 回到行首
+noremap ˙ ^  
+"option+l 回到行尾
+noremap ¬ $
+"option+k 回到顶部
+noremap ˚ gg
+"option+j 回到底部
+noremap ∆ G
 "neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1 "打开vim时自动打开
 let g:neocomplcache_force_overwrite_completefunc = 1
