@@ -1,8 +1,8 @@
 This is a simple vim configuration file.  
-######Preview:  
+###### Preview:  
 ![](http://ww1.sinaimg.cn/large/bf0b41c3gw1e9pk4w8bbrj20zd0jqdit.jpg)  
 
-######Useage
+###### Useage
 ```bash
 $mkdir ~/.vim
 $git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
