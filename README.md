@@ -1,4 +1,7 @@
 This is a simple vim configuration file.  
+###### Blog:
+[https://tailang.top/tags/vim/](https://tailang.top/tags/vim/)
+
 ###### Preview:  
 ![](http://ww1.sinaimg.cn/large/bf0b41c3gw1e9pk4w8bbrj20zd0jqdit.jpg)  
 
